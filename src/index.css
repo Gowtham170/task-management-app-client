@@ -1,0 +1,97 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --btn-text-color: #F8FAFC;
+  --primary-blue: #7C3AED;
+  --light-color: #000;
+  --light-color-alt: #475569;
+  --primary-background-color: #e5e9f4;
+  --secondary-background-color: #F1F5F9;
+  --font-family: 'Poppins', sans-serif;
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+  --gap: 2rem;
+  --margin-sm: 2rem;
+  --margin-md: 3rem;
+  --item-min-height-sm: 20rem;
+  --item-min-height-md: 30rem;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--light-color-alt);
+  letter-spacing: .5px;
+  background-color: var(--primary-background-color);
+  transition: background-color .25s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  font-size: var(--font-size-md);
+}
+
+input, button {
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Theme Color change */
+/* body.dark-theme {
+   --primary-blue: #5B21b6;
+  --light-color: #E2E8F0;
+  --light-color-alt: #94A3B8;
+  --primary-background-color: rgb(4, 1, 41);
+  --secondary-background-color: #141E33;
+} */
+
+/* Reusable classes */
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+} 
+
+.place-items-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.title {
+  color: var(--light-color);
+}
+

@@ -1,7 +1,9 @@
-import Sidebar from "./sidebar/Sidebar";
-import Todo from "./todo/Todo";
+import Navbar from "./sidebar/navbar/Navbar";
+import Todos from "./todos/Todos";
+import TaskDetailsPanel from "./sidebar/taskdetails/TaskDetailsPanel";
 
 export {
-    Sidebar,
-    Todo
+    Navbar,
+    Todos,
+    TaskDetailsPanel
 };

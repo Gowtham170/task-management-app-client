@@ -1,11 +1,12 @@
 import React from 'react';
-import { Sidebar , Todo } from './components';
+import { Navbar , Todos, TaskDetailsPanel } from './components';
 
 const App = () => {
   return (
     <div>
-      <Sidebar/>
-      <Todo/>
+      <Navbar/>
+      <Todos/>
+      <TaskDetailsPanel/>
     </div>
   );
 }

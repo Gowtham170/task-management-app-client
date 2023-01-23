@@ -6,8 +6,11 @@
   --primary-blue: #7C3AED;
   --light-color: #000;
   --light-color-alt: #475569;
-  --primary-background-color: #e5e9f4;
+  --primary-background-color: #d8deed;
   --secondary-background-color: #F1F5F9;
+  --task-container-hover: #c7ced7;
+  --list-current: #E11D48;
+  --list-bg-color: #EDE9FE;
   --font-family: 'Poppins', sans-serif;
   --font-size-xs: 1.2rem;
   --font-size-sm: 1.6rem;
@@ -61,14 +64,17 @@ input, button {
   background: transparent;
 }
 
-/* Theme Color change */
-/* body.dark-theme {
+/* Theme Color change */ 
+body.dark-theme {
    --primary-blue: #5B21b6;
   --light-color: #E2E8F0;
   --light-color-alt: #94A3B8;
   --primary-background-color: rgb(4, 1, 41);
   --secondary-background-color: #141E33;
-} */
+  --task-container-hover: rgba(255, 255, 255, .1);
+  --list-current: #ffffff;
+  --list-bg-color: rgba(255, 255, 255, .1);
+}
 
 /* Reusable classes */
 .container {
@@ -95,3 +101,25 @@ input, button {
   color: var(--light-color);
 }
 
+.screen-lg-hidden {
+  display: none;
+}
+
+/* Scrollbar styles */
+
+::-webkit-scrollbar {
+  width: .5rem;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a0a4c4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9a9fc0;
+} 

@@ -45,6 +45,7 @@
     overflow: hidden;
     overflow-y: auto;
     padding: 1rem;
+    position: absolute;
 }
 
 .data-result::-webkit-scrollbar {
@@ -71,7 +72,8 @@
     background-color: var(--secondary-background-color);
     overflow: hidden;
     overflow-y: auto;
-    padding: .4rem 1rem;
+    padding: 1rem;
+    position: absolute;
 }
 .data-noresult span {
     padding: .5rem;
